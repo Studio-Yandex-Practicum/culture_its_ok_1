@@ -6,6 +6,7 @@ from django.urls import include, path
 urlpatterns = [
     path('', include('culture.urls', namespace='culture')),
     path('admin/', admin.site.urls),
+    path('tinymce/', include('tinymce.urls')),
 ]
 
 if settings.DEBUG:
